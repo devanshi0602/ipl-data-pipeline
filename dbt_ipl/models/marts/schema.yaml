@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: match_results
+    description: "Enriched match-level results"
+    columns:
+      - name: match_id
+        tests:
+          - unique
+          - not_null
+
+  - name: team_performance
+    description: "Season-wise team win/loss stats"
+    columns:
+      - name: win_percentage
+        tests:
+          - not_null
+
+  - name: top_batsmen
+    description: "Career batting stats for players with 500+ runs"
+    columns:
+      - name: batsman
+        tests:
+          - unique
+          - not_null

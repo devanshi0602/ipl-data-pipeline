@@ -1,0 +1,6 @@
+FROM apache/airflow:2.8.0
+
+USER root
+RUN pip install --no-cache-dir dbt-bigquery==1.11.1
+
+USER airflow

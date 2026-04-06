@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: raw
+    database: ipl-pipeline
+    schema: raw
+    tables:
+      - name: matches
+        description: "Raw IPL match-level data"
+      - name: deliveries
+        description: "Raw ball-by-ball delivery data"

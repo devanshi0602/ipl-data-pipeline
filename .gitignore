@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# Airflow
+airflow/logs/
+airflow/.env
+
+# dbt
+target/
+dbt_packages/
+logs/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets / credentials
+*.json
+credentials/
+.env
+
+# Big files / local data
+*.csv
+*.parquet
+*.db
